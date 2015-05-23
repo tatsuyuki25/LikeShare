@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/transferStatus_cancel_Button"
+        android:layout_width="132dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Cancel"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/transferStatus_fileTransferStatus_ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transferStatus_cancel_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="0.24" />
+
+    <TextView
+        android:id="@+id/transfer_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transferStatus_fileTransferStatus_ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:text="Uploading..."
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/transferStatus_FileName_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transferStatus_fileTransferStatus_ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="Loading..."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/transferStatus_nowCompletion_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transferStatus_cancel_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Loading..."
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/transfer_status_Icon_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LikeShareActivity!</string>
+    <string name="app_name">iShare</string>
+    <string name="Ver">v1.0 Bata</string>
+  	<string name="file_detail">File Detail</string>
+  	<string name="file_name">File Name</string>	
+  	<string name="icon">icon</string>
+  	<string name="preview">preview</string>
+  	<string name="videolist">Video List</string>
+</resources>

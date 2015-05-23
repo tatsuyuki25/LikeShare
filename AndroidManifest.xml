@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.likeshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"/><!-- 網路 -->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!-- 震動 -->
+    <uses-permission android:name="android.permission.CAMERA"/><!-- 相機 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/><!-- SD卡寫入權限 -->
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/><!-- 存取WIFI -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 改變WIFI狀態 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!-- 取得網路是否連線 -->
+    <application
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <!-- 隱藏標題 -->
+        <activity
+            android:name=".LikeShareActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"></activity>
+      <!--                                                   直立                                                                              關閉小鍵盤 -->
+        <service  android:enabled="true" android:name=".net.LikeShareService"></service>
+       <activity android:name="MultiViewManager" android:screenOrientation="portrait"></activity>
+       <activity android:name="SignUp" android:screenOrientation="portrait"></activity>
+       <activity android:name="transferStatus" android:screenOrientation="portrait"></activity>
+       <activity android:name=".fileManager.FileManager" android:screenOrientation="portrait"></activity>
+       <activity android:name=".video.PlayActivity"
+                 android:screenOrientation="landscape"
+            	 android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            	 ></activity>
+       <activity android:name=".video.VideoActivity" android:screenOrientation="portrait"></activity>
+       <service android:name=".camera.CameraTransfer_Service"></service>
+    </application>
+
+</manifest>

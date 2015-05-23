@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/sign_up_back"
+    
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="300dip"
+            android:layout_height="300dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="34dp"
+                android:text="Email address:"
+                android:textColor="#444444"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtEmail"
+                android:layout_below="@+id/edtEmail"
+                android:textColor="#444444"
+                android:text="Password"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edtPasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtPasswd"
+                android:layout_below="@+id/edtPasswd"
+                android:text="Confirm Password"
+                android:textColor="#444444"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edtConfirmPasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+           
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtConfirmPasswd"
+                android:layout_below="@+id/edtConfirmPasswd"
+                android:textColor="#444444"
+                android:text="User Name" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/rounded_button"
+            android:text="Create My Account"
+            android:textColor="#FA6289"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.likeshare"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:id="@+id/header_layout"
+		android:orientation="vertical" android:layout_height="wrap_content">
+		<com.likeshare.android.widget.TitleFlowIndicator
+			android:id="@+id/viewflowindic" android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			app:footerLineHeight="2dp"
+			
+			app:footerTriangleHeight="12dp" app:textColor="#FFFFFFFF" app:selectedColor="#FFFFC445" app:footerColor="#FFFFC445" app:titlePadding="12dp" app:textSize="13dp" app:selectedSize="14dp" android:layout_marginTop="12dip" app:clipPadding="7dp"></com.likeshare.android.widget.TitleFlowIndicator>
+
+	</LinearLayout>
+	<com.likeshare.android.widget.ViewFlow
+		android:duplicateParentState="true" android:id="@+id/viewflow"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"></com.likeshare.android.widget.ViewFlow>
+</LinearLayout> 
